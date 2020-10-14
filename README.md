@@ -1,26 +1,3 @@
-<h1 align="center">
-    <img alt="Proffy" title="Proffy" src="./public/images/logo-readme.svg" />
-</h1>
-
-<p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
-
-  <img src="https://img.shields.io/github/stars/guilhermecapitao/nlw3-discovery-happy?label=stars&message=MIT&color=8257E6&labelColor=121214" alt="License">  
-</p>
-
-<br>
-
-<p align="center">
-  <img alt="Proffy" src="./public/images/happy-readme.png" width="100%">
-</p>
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido utilizando as seguintes tecnologias:

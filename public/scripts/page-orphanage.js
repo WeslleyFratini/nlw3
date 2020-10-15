@@ -12,7 +12,7 @@ const map = L.map('mapid', options).setView([-21.7061839,-47.487772], 15);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [28,68],
     popupAnchor: [170, 2]
@@ -20,7 +20,7 @@ const icon = L.icon({
 
 const icon = L.icon({
   //Peagando a imagem do ícone
-  iconUrl: "./public/images/map-marker.svg",
+  iconUrl: "/images/map-marker.svg",
   // Tamanho do ícone 
   iconSize: [58, 68],
   //Aonde ele vai estar

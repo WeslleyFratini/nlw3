@@ -1,21 +1,23 @@
-const { query } = require('express')
-const express = require('express')
-const path = require('path')
-const pages = require('./pages.js')
+const express = require("express");
+const path = require("path");
 
+const pages = require("./pages.js");
 
+const server = express();
 
-const server = express()
+server
+  .use(express.urlencoded({ extended: true }))
 
-server.use(express.static('public'))
+  .use(express.static("public"))
+  .set("views", path.join(__dirname, "views"))
+  .set("view engine", "hbs")
 
-server.set('views', path.join(__dirname, "views"))
+  .get("/", pages.index)
+  .get("/orphanage", pages.orphanage)
+  .get("/orphanages", pages.orphanages)
+  .get("/create-orphanage", pages.createOrphanage)
+  .post("/save-orphanage", pages.saveOrphanage);
 
-server.set('view engine', 'hbs')
-
-server.get('/', pages.index)
-server.get('/orphanage', pages.orphanage)
-server.get('/orphanages', pages.orphanages)
-server.get('/create-orphanage', pages.createOrphanage)
-
-server.listen(5500)
+server.listen(5500, () => {
+  console.log("Server started");
+});
